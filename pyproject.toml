@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bsc-extended-intro-cs-hw3"
+version = "1.0.0"
+description = "Integer roots, block-merge sorting, numerical derivatives, and inverse approximation"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Kobie Hazon" }]
+dependencies = []
+
+[project.scripts]
+extended-intro-hw3 = "extended_intro_hw3.cli:cli"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0,<9",
+    "ruff>=0.12,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/extended_intro_hw3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["assignment"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
+
