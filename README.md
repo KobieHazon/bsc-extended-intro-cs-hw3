@@ -49,7 +49,7 @@ The tests cover all maintained algorithms, invalid inputs, duplicate triplets, e
 
 - `assignment/hw3_tester.py`: supplied tester preserved in its original form
 - `assignment/score-key.pdf`: supplied grading key
-- `solution/written-answers.pdf`: my six-page written submission with identifying metadata reduced to the author's name
+- `solution/written-answers.pdf`: my six-page written submission
 - `src/extended_intro_hw3/`: maintained algorithms and command-line interface
 - `tests/`: portable pytest regression suite, including the supplied tester
 
