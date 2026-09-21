@@ -1,4 +1,4 @@
-from extended_intro_hw3.cli import cli
+from extended_intro_hw3_cli import cli
 
 
 def test_block_sort_cli(monkeypatch, capsys) -> None:

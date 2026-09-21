@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 
-from .exercises import sort_by_block_merge, sort_triplets1, sort_triplets2
+from extended_intro_hw3 import sort_by_block_merge, sort_triplets1, sort_triplets2
 
 
 def triplet(value: str) -> tuple[int, int, int]:

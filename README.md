@@ -17,7 +17,7 @@ cd bsc-extended-intro-cs-hw3
 uv sync --dev
 ```
 
-The maintained package supports Python 3.10 or newer and has no runtime dependencies.
+The implementation supports Python 3.10 or newer and has no runtime dependencies.
 
 ## Usage
 
@@ -50,7 +50,7 @@ The tests cover all maintained algorithms, invalid inputs, duplicate triplets, e
 - `assignment/hw3_tester.py`: supplied tester preserved in its original form
 - `assignment/score-key.pdf`: supplied grading key
 - `solution/written-answers.pdf`: my six-page written submission
-- `src/extended_intro_hw3/`: maintained algorithms and command-line interface
+- `src/`: maintained algorithms and command-line interface
 - `tests/`: portable pytest regression suite, including the supplied tester
 
 ## Numerical Scope
