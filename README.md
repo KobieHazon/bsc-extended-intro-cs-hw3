@@ -43,7 +43,7 @@ uv run ruff check .
 uv run ruff format --check .
 ```
 
-The tests cover all maintained algorithms, invalid inputs, duplicate triplets, empty blocks, deterministic numerical behavior, command-line output, and the complete supplied tester. The untouched recovered solution passes that tester under a fixed random seed before modernization.
+The tests cover all maintained algorithms, invalid inputs, duplicate triplets, empty blocks, deterministic numerical behavior, command-line output, and the complete supplied tester.
 
 ## Repository Structure
 
@@ -53,14 +53,6 @@ The tests cover all maintained algorithms, invalid inputs, duplicate triplets, e
 - `src/extended_intro_hw3/`: maintained algorithms and command-line interface
 - `tests/`: portable pytest regression suite, including the supplied tester
 
-## Implementation notes
-
-The recovered source combines my implementations with the distributed scaffold. The scaffold comments remain in the historical solution commit and are not presented as authored work.
-
 ## Numerical Scope
 
 These routines are educational implementations, not general-purpose numerical-analysis software. The integer-root functions rely on monotonicity assumptions described by their interfaces, and Newton-Raphson can return no result when it encounters a near-zero derivative, invalid arithmetic, non-finite values, or the iteration limit. The maintained default starting value is deterministic so results do not depend on process-global randomness.
-
-## License
-
-No repository-wide license is declared because the repository combines original work with supplied material whose reuse terms were not recorded.
